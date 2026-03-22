@@ -35,5 +35,10 @@ dist-ssr
 # Testing
 coverage
 
+# AI Agent Files (keep skills, ignore temporary files)
+.agents/**/tmp/
+.agents/**/cache/
+
 # Vue/Vite specific
 *.tsbuildinfo
+.env*.local

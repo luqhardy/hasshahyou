@@ -1,0 +1,56 @@
+{
+  "llmOutputLanguage": "English",
+  "features": {
+    "enableTaskManagement": true,
+    "enableShellCommands": true,
+    "enableWebSearch": true,
+    "enableFileOperations": true
+  },
+  "preferences": {
+    "codeStyle": {
+      "typescript": {
+        "preferCompositionApi": true,
+        "useScriptSetup": true,
+        "defineTypesSeparately": true
+      },
+      "vue": {
+        "singleFileComponents": true,
+        "usePinia": true
+      }
+    },
+    "testing": {
+      "framework": "vitest",
+      "e2eFramework": "playwright"
+    }
+  },
+  "projectContext": {
+    "name": "hasshahyou",
+    "description": "Japanese train station departure board simulator",
+    "framework": "vue3",
+    "language": "typescript",
+    "backend": "vercel-serverless",
+    "externalApis": ["ODPT"]
+  },
+  "environmentVariables": [
+    {
+      "name": "ODPT_ACCESS_TOKEN",
+      "description": "ODPT API access token (consumer key)",
+      "required": true,
+      "sensitive": true
+    }
+  ],
+  "skills": [
+    {
+      "name": "odpt_api_integration",
+      "path": ".agents/skills/odpt_api_integration"
+    },
+    {
+      "name": "led_board_styling",
+      "path": ".agents/skills/led_board_styling"
+    },
+    {
+      "name": "bilingual_support",
+      "path": ".agents/skills/bilingual_support"
+    }
+  ]
+}
